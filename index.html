@@ -1,0 +1,292 @@
+<html>
+<head>
+<style>
+#b1{
+border:1px solid black;
+width:45rem;
+height:50rem;
+margin-top:45px;
+margin-left:200px;
+}
+h1{
+text-align:center;
+font-size:2rem;
+}
+#txt{
+border:2px solid black;
+width:20rem;
+height:2.5rem;
+margin-left:15px;
+}
+#cbox{
+margin-left:10px;
+margin-top:10px;
+}
+#cbox1{
+margin-left:10px;
+margin-top:10px;
+}
+label
+{
+font-size:14px;
+margin-left:15px;
+}
+#txt1{
+border:2px solid black;
+width:20rem;
+height:10rem;
+margin-left:15px;
+
+}
+.btn{
+width:10rem;
+height:3rem;
+margin-left:15px;
+
+}
+table,tr,td{
+padding-top:15px;
+}
+</style>
+</head>
+<body>
+
+<div id="b1">
+
+<h1>Student admission Form</h1>
+
+<form  action="connection.php" method="POST" enctype="multipart/form-data">
+<table>
+
+<tr>
+
+<td>
+<input type="file" name="file" id="file">
+</td>
+
+<td>
+<input type="text" name="name" placeholder="please enter name" id="txt">
+</td>
+
+
+</tr>
+
+<tr>
+
+<td>
+
+<input type="text" name="cnic[]" placeholder="please enter cnic" id="txt">
+
+</td>
+
+<td>
+<input type="email" name="email" placeholder="please enter email" id="txt">
+
+</td>
+
+
+</tr>
+
+<tr>
+
+<td>
+
+<select name="country" id="txt">
+
+<option>
+select country
+</option>
+
+<option>
+
+pakistan
+</option>
+
+
+<option>
+
+india
+</option>
+
+<option>
+
+canada
+</option>
+
+<option>
+
+australia
+</option>
+
+<option>
+
+south africa
+</option>
+
+<option>
+
+london
+</option>
+
+<option>
+
+usa
+</option>
+
+<option>
+
+kuwait
+</option>
+
+<option>
+
+srilanka
+</option>
+
+
+</select>
+
+</td>
+
+<td>
+
+<select name="city" id="txt">
+
+<option>
+select city
+</option>
+
+<option>
+
+rwp
+</option>
+
+
+<option>
+lahore
+</option>
+<option>
+karachi
+</option>
+<option>
+multan
+</option>
+<option>
+peshawar
+</option>
+<option>
+kashmir
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="zipcode" placeholder="please country zip code" id="txt"> 
+</td>
+<td>
+<select name="qualification[]" id="txt">
+<option>
+select qualification
+</option>
+<option>
+matric
+</option>
+<option>
+F.A
+</option>
+<option>
+F.sc(medical)
+</option>
+<option>
+F.sc(engneering)
+</option>
+<option>
+I.com
+</option>
+<option>
+I.cs
+</option>
+<option>
+B.A
+</option>
+<option>
+B.com
+</option>
+<option>
+B.sc
+</option>
+<option>
+B.cs
+</option>
+<option>
+M.A
+</option>
+<option>
+M.sc
+</option>
+<option>
+M.cs
+</option>
+<option>
+Bs
+</option>
+<option>
+Mbbs
+</option>
+<option>
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="datetime-local" name="date" id="txt">
+</td>
+<td>
+
+<input type="text" name="nat" placeholder="please nationality" id="txt">
+
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="ph" placeholder="please phone" id="txt">
+</td>
+<td>
+<input type="checkbox" value="c++" name="c[]"  id="cbox"> <label>c++ development</label>
+<input type="checkbox" value="java" name="c[]" id="cbox"><label>java development</label>
+<br>
+<input type="checkbox" value="andorid" name="c[]" id="cbox"><label>andorid development</label>
+<input type="checkbox" value=".net mvc" name="c[]" id="cbox1"><label>.net mvc development</label>
+<br>
+<input type="checkbox" value="graphic designing" name="c[]" id="cbox1"><label>graphic designing</label>
+<input type="checkbox" value="web designing" name="c[]" id="cbox1"><label>web designing</label>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="number" name="age" placeholder="please age" id="txt"> 
+</td>
+<td>
+<input type="radio" value="male" name="gender">male 
+<input type="radio" value="female" name="gender">female 
+</td>
+</tr>
+<tr>
+<td>
+<textarea name="address" id="txt1">
+</textarea>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" name="btn" value="save" class="btn">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
